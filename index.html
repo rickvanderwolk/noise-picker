@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Noise" />
+<meta name="mobile-web-app-capable" content="yes" />
+<title>Noise picker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Noise picker</h1>
+      <p class="hint">Tap a color, hear the noise.</p>
+    </header>
+
+    <div class="readout">
+      <div class="name" id="name">pink noise</div>
+      <div class="meta" id="meta">−3.0 dB/oct</div>
+    </div>
+
+    <canvas id="spectrum" width="800" height="140"></canvas>
+
+    <button id="toggle" class="play" aria-label="play / stop">
+      <span class="play-icon"></span>
+    </button>
+
+    <div class="palette" id="palette" aria-label="noise colors"></div>
+
+    <input type="color" id="picker" value="#ff8fb2" tabindex="-1" />
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
